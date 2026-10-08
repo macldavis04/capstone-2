@@ -1,0 +1,75 @@
+MERIDIAN TECHNOLOGIES, INC.
+INDUSTRY BENCHMARKS REFERENCE, 2026 EDITION
+Document owner: Strategy and Business Operations
+Version: 1.0
+Published: May 2026
+
+1. PURPOSE
+
+This reference collects external benchmarks that Meridian leadership uses to compare our performance with peers. The figures describe large consumer electronics and device companies that sell hardware together with subscription services, through their own retail stores and partners. They are compiled from industry surveys and analyst reports and are rounded. Use them for directional comparison only. Meridian's own figures should always come from internal systems, not from this document.
+
+2. EMPLOYEE SATISFACTION AND ENGAGEMENT
+
+Benchmarks below use a 1 to 10 overall satisfaction scale, the same scale as the Meridian engagement survey.
+
+- Industry average employee satisfaction: 7.4
+- Top-quartile companies: 8.3 or higher
+- Bottom-quartile companies: 6.5 or lower
+
+By department (industry average):
+- Engineering: 7.8
+- Design: 7.7
+- Sales: 7.2
+- Marketing: 7.4
+- Operations and Finance: 7.3
+- Customer Support: 6.8
+- Retail: 6.6
+
+Common drivers of higher satisfaction in top-quartile companies:
+- Flexible work arrangements, with 2 or fewer required office days for roles that do not need labs
+- Clear career paths with published promotion criteria for every department, including retail
+- Pay at or above the 60th percentile of the local market for frontline roles
+- Predictable schedules and staffing plans for launch and holiday peaks
+- Frequent, specific recognition from managers and peers
+
+Average employee tenure across the industry is 4.1 years. Annual voluntary attrition averages 12 percent overall and 28 percent in retail.
+
+3. BUSINESS CUSTOMER RETENTION AND CHURN
+
+These figures cover business and education accounts with device management or cloud subscriptions. Churn rate means accounts lost during the year divided by accounts at the start of the year.
+
+- Industry average annual account churn: 9.0 percent
+- Top-quartile companies: 5.5 percent or lower
+- Bottom-quartile companies: 13.0 percent or higher
+- Average annual churn for accounts under 250 devices: 13.5 percent
+- Average annual churn for accounts over 2,500 devices: 4.5 percent
+
+Gross revenue retention averages 90 percent. Net revenue retention averages 108 percent.
+
+Industry average business customer satisfaction on a 10-point scale: 7.8.
+
+4. GROWTH AND SALES PERFORMANCE
+
+- Median annual revenue growth: 6 percent
+- Top-quartile annual revenue growth: 12 percent or higher
+- Services revenue growth (subscriptions, repairs, cloud): median 14 percent, growing faster than hardware
+- Average discount for business and education volume purchases: 8 percent
+- Q4 (October to December) typically accounts for 33 percent of full-year revenue because of the holiday season and fall product launches.
+
+Regional growth benchmarks (median annual revenue growth):
+- Americas: 5 percent
+- Europe: 6 percent
+- Greater China: 4 percent, with high volatility from local competition
+- Rest of Asia Pacific: 10 percent
+
+5. SUPPORT BENCHMARKS
+
+- Median first response time for critical issues: 30 minutes
+- Median in-store repair turnaround: 2 days
+- Average first-response SLA attainment: 92 percent
+
+6. HOW TO USE THESE BENCHMARKS
+
+- Compare like with like. Make sure Meridian's internal metric uses the same definition and scale before comparing.
+- Look at the gap and the trend. A metric below benchmark but improving quarter over quarter tells a different story than one that is falling.
+- Pair every benchmark gap with the policy or process that may explain it. For example, satisfaction gaps in Retail and Customer Support should be read alongside launch workload, office requirements, pay positioning, and promotion criteria.

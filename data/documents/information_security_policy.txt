@@ -1,0 +1,91 @@
+MERIDIAN TECHNOLOGIES, INC.
+INFORMATION SECURITY AND CONFIDENTIALITY POLICY
+Document owner: Office of the CISO
+Version: 6.0
+Effective date: January 15, 2026
+Review cycle: Annual (next review January 2027)
+
+1. PURPOSE AND SCOPE
+
+This policy defines how Meridian protects company information, unreleased products, and the personal data of the people who use our devices. Meridian designs and sells consumer hardware and services: Meridian Phone, Meridian Book laptops, Meridian Watch, and Meridian Cloud subscriptions. Two things set our security needs apart. First, millions of customers trust us with photos, health readings, payment cards, and messages. Second, our business depends on keeping unreleased products secret until launch day.
+
+The policy applies to all employees, retail staff, contractors, interns, manufacturing partners, and vendors who access Meridian systems, facilities, or data.
+
+Violations may result in loss of access, disciplinary action up to and including termination, and, where applicable, civil or criminal action. Leaking unreleased product information is treated as gross misconduct.
+
+2. GUIDING PRINCIPLES
+
+- Privacy by design: collect the minimum customer data needed, process it on the device where possible, and never sell it.
+- Least privilege: people and services receive only the access needed for their current role.
+- Need to know: product information is shared only with people assigned to that product, even inside Meridian.
+- Defense in depth: no single control is relied on alone.
+
+3. ACCESS CONTROL AND AUTHENTICATION
+
+3.1 Passwords
+- Passwords must be at least 15 characters long. Passphrases are encouraged.
+- Passwords must not be reused or shared with anyone, including IT staff.
+- All employees must store work credentials in the company-approved password manager.
+- Passwords are changed immediately if compromise is suspected, not on a fixed schedule.
+
+3.2 Multi-factor authentication (MFA)
+- MFA is mandatory for email, single sign-on (SSO), VPN, source code repositories, cloud consoles, and any system holding Confidential or Restricted data.
+- Hardware security keys are required for engineers with production or code-signing access, all administrators, and anyone disclosed on an unreleased product program.
+- SMS codes are not an approved second factor.
+
+3.3 Access reviews
+- Managers review their team's access to production systems and program spaces every quarter.
+- Access for departing employees is revoked within 4 hours of their final working time.
+
+4. DATA CLASSIFICATION
+
+All Meridian data falls into one of four classes. The strictest class applies when data is combined.
+
+- Public: Information approved for public release, such as product pages, press releases after launch, and published support articles.
+- Internal: Day-to-day business information, such as internal wikis, meeting notes, and team plans. Share only with Meridian staff and approved contractors.
+- Confidential: Customer account data, retail sales results before release, source code, supplier pricing, and employee records. Encrypt in transit and at rest. Share only on a need-to-know basis.
+- Restricted: Unreleased product designs, names, prices, and launch dates; customer health data and message content; payment card data; code-signing keys and other secrets. Stored only in approved, access-logged systems. Never placed in email, personal devices, chat outside approved program channels, or AI tools.
+
+Employees must not paste Confidential or Restricted data into unapproved third-party services, including public generative AI tools. Approved AI tools are listed on the IT portal and may be used with Internal data only unless the Security team grants an exception.
+
+5. PRODUCT SECRECY
+
+- Every unreleased product has a code name. Use only the code name in documents and conversation, even internally.
+- Employees must be formally disclosed onto a program before seeing any of its materials. Disclosure lists are reviewed monthly.
+- Prototypes must stay inside secured labs or in approved locked cases with a registered serial number. Taking a prototype outside a Meridian facility requires written approval from the program director.
+- Do not discuss unreleased products with family, friends, former colleagues, or on social media. Do not confirm or deny rumors to anyone outside Meridian.
+- Manufacturing partners follow the Supplier Confidentiality Agreement, including camera-free zones on production lines.
+
+6. DEVICE AND NETWORK SECURITY
+
+- Company laptops must use full-disk encryption, automatic screen lock after 5 minutes, and the managed endpoint protection agent.
+- Software updates must be installed within 14 days of release, or within 72 hours for updates the Security team marks as critical.
+- Remote work requires the zero-trust access client for any connection to internal systems.
+- Retail point-of-sale devices are locked to managed configurations and may not be used for personal browsing.
+
+7. INCIDENT REPORTING AND RESPONSE
+
+7.1 What to report
+Report any suspected incident, including lost or stolen devices or prototypes, phishing emails you clicked, unexpected MFA prompts, data sent to the wrong recipient, someone asking about unreleased products, or unusual system behavior.
+
+7.2 How and when to report
+- Report within 1 hour of discovery through the #security-incidents channel or by emailing security@meridian.example. Retail staff report through their store leader, who contacts Security immediately.
+- Outside business hours, call the 24/7 security on-call line.
+- Do not investigate, delete evidence, or contact a suspected attacker yourself.
+- Reporting in good faith is never punished, even if the incident was your own mistake.
+
+7.3 Severity levels
+- SEV-1: Confirmed exposure of customer Restricted data, a leaked unreleased product, compromise of code-signing keys, or a major service outage caused by an attack. Incident commander assigned within 15 minutes. Executive team notified within 1 hour.
+- SEV-2: Suspected exposure of Confidential data, a missing prototype, or compromise of a single privileged account. Response begins within 1 hour.
+- SEV-3: Contained events such as a blocked phishing attempt. Response begins within 1 business day.
+
+7.4 Customer and regulatory notification
+If customer data is affected, Legal and Privacy coordinate notification. Meridian's commitment is to notify affected customers within 72 hours of confirming a breach, or sooner where law requires.
+
+8. TRAINING
+
+All staff complete security, privacy, and confidentiality training during their first week and annually afterward. Employees disclosed on unreleased programs complete additional secrecy training before disclosure. Meridian runs simulated phishing exercises every quarter.
+
+9. EXCEPTIONS
+
+Exceptions require written approval from the CISO, must name a compensating control, and expire after no more than 6 months. No exceptions are granted for prototype handling or code-signing keys.

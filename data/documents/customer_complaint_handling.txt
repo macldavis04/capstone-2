@@ -1,0 +1,92 @@
+MERIDIAN TECHNOLOGIES, INC.
+CUSTOMER COMPLAINT HANDLING PROCEDURE
+Document owner: VP of Customer Experience
+Version: 5.1
+Effective date: February 1, 2026
+
+1. PURPOSE
+
+This procedure explains how Meridian receives, tracks, resolves, and learns from customer complaints. A complaint is any expression of dissatisfaction from a customer about our products, services, repairs, billing, or staff, whether or not the customer uses the word "complaint." Meridian's brand promise is a premium experience from purchase to repair, so how we handle a complaint matters as much as the product itself. This procedure covers individual consumers and Meridian for Business accounts.
+
+2. GUIDING PRINCIPLES
+
+- Acknowledge fast, even before the answer is known.
+- One owner per complaint from intake to close.
+- Fix the customer's problem first, then fix the root cause.
+- Never argue about whether the customer's frustration is valid.
+- Treat every customer's data with care; never ask for a device passcode.
+
+3. INTAKE CHANNELS
+
+Customers can raise complaints through:
+- Meridian Stores, at the Tech Desk
+- The Meridian Support app and website chat (available 24/7)
+- Phone support (24/7 for consumers; business hours for Meridian for Business)
+- Email to support@meridian.example
+- Their account manager, for Meridian for Business customers
+- Social media and review sites, monitored by the Community team
+
+Every complaint must be logged as a case in the support system within 30 minutes of receipt, tagged with the "complaint" label, the product, and the customer's region (Americas, Europe, Greater China, or Rest of Asia Pacific).
+
+4. SEVERITY TIERS AND SERVICE LEVELS
+
+Support assigns a tier at intake. The tier can be raised at any time.
+
+Tier 1, Critical
+Definition: A safety concern (overheating, swelling battery, injury), a suspected account compromise or data exposure, or a business customer with more than 50 devices unable to work.
+First response: within 15 minutes
+Resolution or workaround target: within 4 hours
+Updates to customer: every 60 minutes until resolved
+Safety complaints are also reported to Product Safety within 1 hour.
+
+Tier 2, High
+Definition: A device that will not power on or is unusable, data loss, a repair that failed or was not returned on time, or a billing error over $500.
+First response: within 1 hour
+Resolution target: within 1 business day; a replacement or loaner device is offered if a repair will take longer than 3 days
+
+Tier 3, Standard
+Definition: A feature not working as expected with a workaround, subscription billing disputes, or dissatisfaction with a store or support interaction.
+First response: within 4 business hours
+Resolution target: within 3 business days
+
+Tier 4, Low
+Definition: Feedback, feature requests framed as complaints, or cosmetic issues.
+First response: within 1 business day
+Resolution target: acknowledged and routed to Product within 5 business days
+
+5. HANDLING STEPS
+
+Step 1, Acknowledge. Respond within the tier's first-response time. Confirm the issue in your own words and tell the customer when they will hear from us next.
+Step 2, Investigate. Run remote diagnostics with the customer's consent, check for known issues, and review repair and purchase history.
+Step 3, Resolve. Repair, replace, refund, or provide a workaround. Confirm the problem is solved before closing.
+Step 4, Close. Record the root cause category (hardware defect, software defect, repair experience, billing, store experience, or other) and send the post-resolution survey.
+Step 5, Follow up. For Tier 1 and Tier 2 complaints, a senior advisor contacts the customer within 5 business days of closure.
+
+6. ESCALATION PATH
+
+- A missed first-response target escalates the case to the support team lead.
+- A missed resolution target escalates to the Support Manager, and for business accounts, to the account manager.
+- Tier 1 cases unresolved after 4 hours escalate to the VP of Customer Experience.
+- Any Meridian for Business customer who threatens to cancel is flagged as a churn risk and handed to Customer Success under the churn-prevention playbook.
+- Complaints alleging discrimination, harassment by a Meridian employee, or a privacy violation go directly to Legal, Privacy, and HR, bypassing the normal tiers.
+
+7. REMEDIES AND GOODWILL
+
+- Store and support advisors may offer goodwill up to $100 (a credit, accessory, or free month of Meridian Cloud) without approval.
+- Goodwill from $100 to $1,000, including out-of-warranty replacements, requires a Support Manager or Store Leader.
+- Anything above $1,000 requires the regional Customer Experience director.
+- Customers with Meridian Care coverage receive repairs under its terms; advisors may not charge a covered customer.
+
+8. COMMUNICATION STANDARDS
+
+- Use plain language, not technical jargon.
+- Apologize for the impact without blaming other teams, carriers, or the customer.
+- Never comment on unreleased products or future software features.
+- Public complaints on social media get a public acknowledgment within 2 hours, then move to a private channel.
+
+9. REPORTING AND CONTINUOUS IMPROVEMENT
+
+- Customer Experience publishes a weekly complaint report showing volume by tier, product, channel, and region, along with SLA attainment.
+- Target SLA attainment is 95 percent for first response and 90 percent for resolution.
+- Any root cause appearing in more than 50 complaints in a month becomes a ticket for the owning product team.
+- Complaint volume always spikes in the 3 weeks after a major launch and during the holiday quarter; staffing plans account for this.

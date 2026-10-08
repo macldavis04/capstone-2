@@ -1,0 +1,88 @@
+MERIDIAN TECHNOLOGIES, INC.
+ENGINEERING CODE REVIEW PROCESS
+Document owner: SVP of Software Engineering
+Version: 4.2
+Effective date: March 1, 2026
+
+1. PURPOSE
+
+Every change to Meridian software is reviewed by at least one other engineer before it merges. This covers MeridianOS (the operating system on Meridian Phone, Book, and Watch), device firmware, Meridian Cloud services, first-party apps, and infrastructure-as-code. Software we ship runs on hundreds of millions of devices, and a bad update can be hard to roll back once it is installed. Code review catches defects early, protects customer privacy, and keeps our codebase consistent.
+
+2. BEFORE OPENING A PULL REQUEST
+
+Authors are responsible for making a pull request (PR) easy to review:
+- Keep PRs small. The target is under 400 changed lines. Larger changes should be split into a stack of smaller PRs unless the change is generated code or a mechanical rename.
+- Run the full local test suite, linter, and the on-device test runner for affected hardware.
+- Write a description that covers what changed, why it changed, how it was tested, which devices were tested, and any risks.
+- Link the related ticket. Refer to unreleased hardware only by its code name.
+- Mark the PR as a draft until it is ready for review.
+
+3. REVIEWER REQUIREMENTS
+
+3.1 Number of approvals
+- Standard changes require 1 approval from an engineer on the owning team.
+- Changes to authentication, encryption, payments, the secure enclave, or any code that reads customer health, location, photos, or messages require 2 approvals, one of them from the Privacy Engineering team.
+- Firmware changes and anything affecting battery, thermal, or radio behavior require 2 approvals, including one from the owning hardware team.
+- Changes to the code-signing or software update pipeline require approval from the Release Engineering lead.
+- Database schema migrations for Meridian Cloud require 2 approvals, including one from the Data Platform team.
+
+3.2 Who cannot approve
+- Authors cannot approve their own PRs.
+- An approval is void if new commits are pushed after it, except for commits that only fix formatting or merge the main branch.
+
+3.3 Response times
+- Reviewers should give a first response within 1 business day.
+- PRs labeled "hotfix" should be reviewed within 2 hours during business hours.
+- If a PR waits more than 2 business days, the author may escalate to the team's engineering manager.
+
+4. WHAT REVIEWERS CHECK
+
+Reviewers look at the following, in roughly this order:
+1. Correctness: Does the code do what the description says? Are edge cases handled, including empty inputs, low battery, no network, and time zones?
+2. Privacy and security: Does the change collect or transmit any new customer data? If so, has it been approved in a privacy review? Are inputs validated and secrets kept out of the code?
+3. Performance: Does the change affect launch time, memory, battery life, or frame rate on the oldest supported device?
+4. Tests: Are there tests for new behavior and for the bug being fixed? Do the tests fail without the change?
+5. Accessibility: Do user-facing changes work with screen readers, larger text, and reduced motion?
+6. Readability and operability: Are names clear? Are errors logged without customer personal data?
+
+Reviewers label comments to show their weight:
+- "blocking:" must be resolved before merge.
+- "suggestion:" an improvement the author may accept or decline.
+- "nit:" minor style points that never block a merge.
+
+5. AI-GENERATED CODE
+
+Meridian allows engineers to use approved internal AI coding assistants. External AI tools may not be used on any Meridian codebase. The following rules apply:
+- Authors must disclose AI assistance by checking the "AI-assisted" box in the PR and noting which parts were generated.
+- The author is fully responsible for AI-generated code and must be able to explain every line during review.
+- AI-generated code that touches privacy, security, payments, or firmware always takes the 2-approval path in section 3.1, even if small.
+- Generated tests must assert real behavior rather than restating the implementation.
+- Never paste unreleased product details, customer data, or secrets into any AI prompt.
+
+6. AUTOMATED CHECKS
+
+A PR cannot merge until these pass:
+- Unit and integration tests
+- On-device tests on the oldest and newest supported hardware
+- Linting and formatting
+- Static analysis with no new high-severity findings
+- Secret scanning
+- Performance regression suite (no more than 2 percent regression in launch time, memory, or battery drain)
+- Accessibility audit for user-facing changes
+
+Automated checks do not replace human review. A green build is necessary but not sufficient.
+
+7. MERGING AND RELEASE
+
+- The author merges the PR after approvals and passing checks, using squash merge.
+- MeridianOS releases go through internal dogfooding for at least 2 weeks, then a public beta, then staged rollout to 1 percent, 10 percent, and 100 percent of devices.
+- Meridian Cloud changes ship behind feature flags and roll out to 5, 25, then 100 percent of users with at least 24 hours between stages.
+- A code freeze applies for 2 weeks before each major hardware launch event.
+
+8. EMERGENCY CHANGES
+
+During a SEV-1 or SEV-2 incident, a hotfix may merge with 1 approval from any senior engineer. A full review must happen within 2 business days afterward and be recorded in the incident postmortem.
+
+9. METRICS
+
+Engineering leadership tracks median time to first review, median PR size, and the share of production incidents traced to reviewed code. These metrics improve the process; they are not used to evaluate individual engineers.

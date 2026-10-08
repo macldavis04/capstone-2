@@ -1,0 +1,71 @@
+MERIDIAN TECHNOLOGIES, INC.
+CUSTOMER SUCCESS STRATEGY: MERIDIAN FOR BUSINESS
+Document owner: VP of Business and Education Markets
+Version: 2026.2
+Effective date: April 1, 2026
+
+1. MISSION
+
+Meridian for Business sells devices and Meridian Cloud for Business subscriptions to companies, schools, and public-sector organizations. Customer Success exists to make sure every account deploys Meridian devices smoothly, sees value, renews its subscription, and grows its fleet. Our north-star goals for fiscal year 2026 are to bring annual account churn below 10 percent and to keep average account satisfaction at or above 8.0 on our 10-point survey scale.
+
+2. CUSTOMER SEGMENTS
+
+- Enterprise: more than 2,500 managed devices. Assigned a dedicated Customer Success Manager (CSM) with no more than 15 accounts.
+- Mid-Market: 250 to 2,500 devices. Assigned a CSM with no more than 40 accounts.
+- Small Business and Education: fewer than 250 devices. Served by a pooled CSM team and digital programs.
+
+3. ONBOARDING
+
+Strong onboarding is the single biggest driver of retention. Accounts that enroll at least 80 percent of their purchased devices in device management within 30 days renew at a far higher rate than those that do not.
+
+Onboarding milestones:
+- Day 0 to 7: Kickoff call, device management setup, and identity provider integration.
+- Day 8 to 21: Pilot group of devices deployed with zero-touch enrollment.
+- Day 22 to 30: Full fleet rollout. First value review confirming enrollment and app deployment.
+- Day 60: Adoption check. Any account with under 50 percent of devices enrolled is flagged amber.
+- Day 90: Formal handoff from onboarding to the account CSM with a written success plan.
+
+4. ACCOUNT HEALTH SCORE
+
+Every account has a health score from 0 to 100, refreshed weekly. It combines:
+- Device adoption (35 percent): share of purchased devices enrolled and active.
+- Support experience (20 percent): open Tier 1 and Tier 2 complaints and SLA misses in the last 90 days.
+- Satisfaction (20 percent): the most recent survey score on the 10-point scale.
+- Relationship (15 percent): IT leader engagement and attendance at business reviews.
+- Commercial (10 percent): late payments and subscription seat reductions.
+
+Health bands:
+- Green (75 to 100): healthy. Focus on expansion and device refresh.
+- Amber (50 to 74): at risk. CSM creates a recovery plan within 10 business days.
+- Red (below 50): high churn risk. Triggers the churn-prevention playbook immediately.
+
+5. CHURN-PREVENTION PLAYBOOK
+
+When an account turns red, or a customer signals intent to leave:
+1. Within 2 business days, the CSM holds a discovery call with the account's IT leader to understand the root cause.
+2. Within 5 business days, the CSM, a support lead, and a systems engineer agree on a written save plan with dated actions.
+3. The regional sales lead and Customer Success director are informed for all Enterprise and Mid-Market accounts.
+4. Save offers may include on-site deployment help, extended Meridian Care coverage, a temporary subscription credit, or a plan change. Pricing concessions follow the Sales Policy's approval rules.
+5. The account is reviewed every week until it returns to amber or green, or the customer leaves.
+6. If the customer churns, the CSM completes an exit interview within 30 days and records the primary churn reason.
+
+The top churn reasons recorded in fiscal year 2025 were: difficult integration with the customer's existing device management tools, slow repair turnaround for business devices, a new IT leader standardizing on a competitor's platform, and price compared with lower-cost alternatives.
+
+5.1 How Meridian measures churn
+Account churn rate is the number of business accounts that ended their Meridian Cloud for Business subscription during a period divided by the total number of accounts at the start of the period. An account is counted as churned on its churn date, which is the date the subscription ends without renewal.
+
+6. VOICE OF THE CUSTOMER
+
+- Accounts receive a satisfaction survey (scored 1 to 10) after onboarding and every 6 months afterward.
+- Any score of 6 or below triggers a CSM follow-up within 3 business days.
+- Survey themes are shared monthly with Product, Support, and Sales.
+
+7. BUSINESS REVIEWS AND EXPANSION
+
+- Enterprise accounts receive a quarterly business review (QBR). Mid-Market accounts receive one twice a year.
+- Every QBR covers fleet health, adoption, open issues, and upcoming device refresh timing.
+- CSMs identify expansion opportunities (new devices, refresh cycles, or added services) and hand qualified leads to Sales. CSMs do not negotiate pricing.
+
+8. TEAM METRICS
+
+Customer Success is measured on gross revenue retention, net revenue retention, account churn rate, average satisfaction score, and percentage of accounts in the green band. Individual CSMs are not ranked on survey scores alone, to avoid pressuring customers for high ratings.

@@ -1,0 +1,80 @@
+MERIDIAN TECHNOLOGIES, INC.
+SALES POLICY: PRICING, CHANNELS, AND REGIONAL TARGETS
+Document owner: SVP of Worldwide Sales
+Version: 3.0
+Effective date: January 1, 2026 (start of fiscal year 2026)
+
+1. PURPOSE
+
+This policy sets the rules for pricing, discounts, sales channels, regional targets, and sales conduct at Meridian. It applies to retail store leaders, business and education account executives, channel managers, and anyone who negotiates commercial terms with customers or partners.
+
+2. PRODUCTS AND PRICING PRINCIPLES
+
+Meridian sells four product lines:
+- Meridian Phone: smartphones
+- Meridian Book: laptops
+- Meridian Watch: smartwatches
+- Meridian Cloud: subscription services (storage, backup, media, and Meridian Cloud for Business device management)
+
+Meridian is a premium brand. List prices are set globally by the Pricing Committee, adjusted per country for taxes and currency, and announced only at launch. Consumer prices are the same in Meridian Stores, online, and at authorized resellers. Store and online staff may not discount consumer products outside approved promotions.
+
+3. APPROVED PROMOTIONS
+
+- Trade-in credit for eligible devices, set by the trade-in program.
+- Education pricing for verified students and teachers.
+- The annual back-to-school and holiday promotions approved by the Pricing Committee.
+- No other consumer discounts are permitted.
+
+4. BUSINESS AND EDUCATION DISCOUNTS
+
+Volume discounts for Meridian for Business and education accounts are calculated against list price for the full order or subscription term.
+
+- Up to 5 percent: Account Executive may approve.
+- More than 5 percent up to 10 percent: requires the Sales Manager.
+- More than 10 percent up to 15 percent: requires the Regional Sales Director.
+- More than 15 percent: requires the SVP of Worldwide Sales and the CFO.
+
+Additional rules:
+- Orders of more than 5,000 devices may receive an extra 3 percent without moving up an approval level.
+- Discounts used to save an at-risk renewal must be documented in the account's churn-prevention save plan and follow the same approval levels.
+- Free months of Meridian Cloud, extended Meridian Care, and accessory bundles count toward the total discount.
+- Discounts may not be promised verbally or in email before approval is recorded in the CRM.
+
+5. CHANNELS
+
+- Direct: Meridian Stores and the online store.
+- Business direct: account executives selling to companies, schools, and governments.
+- Partners: wireless carriers and authorized resellers, managed by channel managers under partner agreements. Partners must follow Meridian's pricing and display standards.
+
+6. REGIONS AND TARGETS
+
+Meridian reports results in four regions:
+- Americas
+- Europe (including the Middle East, India, and Africa)
+- Greater China
+- Rest of Asia Pacific (including Japan and Australia)
+
+6.1 Target setting
+- Meridian's fiscal year matches the calendar year. Annual targets are set on January 1 and split by quarter.
+- Regional revenue targets for fiscal year 2026 are based on prior-year revenue plus a growth target: Americas 5 percent, Europe 6 percent, Greater China 4 percent, Rest of Asia Pacific 10 percent.
+- Q4 (October to December) targets carry the most weight because of fall launches and the holiday season.
+
+6.2 Regional performance reviews
+Regional Sales Directors review revenue, units sold, channel mix, and discount levels with the SVP of Worldwide Sales monthly. A region that misses its quarterly target by more than 10 percent must submit a recovery plan within 30 days covering channel inventory, promotions, retail staffing, and partner performance.
+
+7. INVENTORY AND LAUNCH ALLOCATION
+
+- New product inventory is allocated to regions before launch based on forecast demand.
+- Regions may not move launch inventory between channels without approval from Worldwide Operations.
+- Channel partners may not receive new products before launch day under any circumstances.
+
+8. HANDOFF TO CUSTOMER SUCCESS
+
+Every closed Meridian for Business deal is handed to Customer Success within 3 business days, covering the account's goals, device counts, management tools, decision makers, and any special terms. Account executives must not promise deployment timelines shorter than those in the Customer Success Strategy.
+
+9. SALES CONDUCT
+
+- Represent product capabilities accurately. Never discuss unreleased products or future features.
+- Do not disparage competitors with unverified claims.
+- Gifts and entertainment for customers are limited to $150 per person per occasion.
+- Customer data shared during the sales process is Confidential under the Information Security and Confidentiality Policy.
