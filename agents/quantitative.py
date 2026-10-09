@@ -7,14 +7,23 @@ from dotenv import load_dotenv
 load_dotenv()
 
 client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
-MODEL = "gemini-3.6-flash"
+MODEL = "gemini-3.5-flash-lite"
 
 SCHEMA_CONTEXT = """
 Available tables:
 - sales(id, region, product, revenue, date, units_sold)
 - customers(id, name, industry, churn_date, satisfaction_score)
-- employees(id, department, satisfaction_score, tenure_years)
+- employees(id, department, satisfaction_score, tenure_years)+
+
+Tips:
+- date and churn date are on "YYYY-MM-DD" format in text
+- Sales data covers sales data for the calendar year
+- There are four regions "North", "South", "East", "West"
+- satisfaction score in rated from 1 to 10
+
+Example: Q4 sales for North = SELECT SUM(revenue) FROM sales WHERE region = 'North' AND CAST(strftime('%m', date) AS INTEGER) BETWEEN 10 AND 12
 """
+#Added claification on what the db held as it wasn't reading it correctly and an example to find quarterly data
 
 def call_gemini(prompt: str, max_tokens: int, thinking_level: str):
     return client.models.generate_content(
@@ -22,7 +31,7 @@ def call_gemini(prompt: str, max_tokens: int, thinking_level: str):
         contents=prompt,
         config=types.GenerateContentConfig(
             max_output_tokens=max_tokens,
-            thinking_config=types.ThinkingConfig(thinking_level=thinking_level),
+            thinking_config=types.ThinkingConfig(thinking_level="low"),
         ),
     )
 

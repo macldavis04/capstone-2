@@ -12,7 +12,7 @@ client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
 def classify(query: str) -> str:
     response = client.models.generate_content(
-        model="gemini-3.6-flash",
+        model="gemini-3.5-flash-lite",
         contents=f"""Classify this query as exactly one of: qualitative, quantitative, both.
 
 qualitative = questions about policies, processes, procedures, explanations, documentation
@@ -24,7 +24,7 @@ Query: {query}
 Reply with one word only: qualitative, quantitative, or both.""",
         config=types.GenerateContentConfig(
             max_output_tokens=150,
-            thinking_config=types.ThinkingConfig(thinking_level="minimal"),
+            thinking_config=types.ThinkingConfig(thinking_level="low"), #changed to low since minimal isn't supported for 3.8
         ),
     )
     route = (response.text or "").strip().lower().strip(".")

@@ -2,8 +2,8 @@
 import json
 from datetime import datetime
 
-COST_PER_1K_INPUT  = 0.00075   # Updated to Gemini
-COST_PER_1K_OUTPUT = 0.00375
+COST_PER_1K_INPUT  = 0.0001   # Updated to Gemini
+COST_PER_1K_OUTPUT = 0.0004
 
 def log(query: str, agent: str, input_tokens: int, output_tokens: int):
     input_cost  = (input_tokens  / 1000) * COST_PER_1K_INPUT

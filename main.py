@@ -10,7 +10,10 @@ def main():
             break
         if not query:
             continue
-        run(query)
+        try:
+            run(query)
+        except Exception as e:
+            print(f"\nError: {e}\nTry again in a moment.\n") #Added a protection layer incase Google keeps giving 503
 
 if __name__ == "__main__":
     main()

@@ -45,10 +45,10 @@ def run(query: str) -> dict:
     chunks = retrieve(query)
     prompt = build_prompt(query, chunks)
     response = client.models.generate_content(
-        model="gemini-3.6-flash",
+        model="gemini-3.5-flash-lite",
         contents=prompt,
         config=types.GenerateContentConfig(
-            max_output_tokens=1024,
+            max_output_tokens=2048, #Kept getting cut off at 1024
             thinking_config=types.ThinkingConfig(thinking_level="low"),
         ),
     )
