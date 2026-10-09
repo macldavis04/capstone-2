@@ -14,9 +14,32 @@ A multi-agent system that answers questions about Meridian Technologies' policie
 data/database.sqlite is included. create_db.py rebuilds it with fixed seed data if needed.
 
 ## Architecture
+```text
+User query (main.py CLI)
+        │
+        ▼
+Manager (agents/manager.py)
+  • rewrite follow-up using history.json
+  • classify: qualitative / quantitative / both
+        │                         │
+        ▼                         ▼
+Qualitative agent           Quantitative agent
+  • ChromaDB top_k=3          • Gemini NL → SQL
+  • Gemini cited answer       • validate_sql (SELECT only)
+                              • SQLite → Gemini summary
+        │                         │
+        └───────────┬─────────────┘
+                    ▼
+     Validation layer (validation/validator.py)
+                    ▼
+     Tokenomics logger → tokenomics_log.jsonl
+                    ▼
+            Response to user
+```
+
 - agents/manager.py classifies each question as qualitative, quantitative, or both, and routes it.
 - agents/manager.py saves the last 10 questions to history.json and rewrites follow-ups into standalone questions before routing, so context carries across sessions.
-- agents/qualitative.py retrieves the top 5 chunks from ChromaDB and answers with source citations.
+- agents/qualitative.py retrieves the top 3 chunks from ChromaDB and answers with source citations.
 - agents/quantitative.py generates SQL, blocks anything that isn't a SELECT, runs it, and summarizes the results.
 - validation/validator.py checks citations on qualitative answers and SQL status on quantitative ones.
 - tokenomics/logger.py logs input tokens, output tokens, and cost for every model call to tokenomics_log.jsonl.
@@ -34,7 +57,7 @@ data/database.sqlite is included. create_db.py rebuilds it with fixed seed data 
 ## Tokenomics
 - Prices: $0.10 per 1M input tokens and $0.40 per 1M output tokens. Gemini bills thinking tokens as output.
 - Average cost per query: about $0.0004, or about $0.39 per 1,000 queries.
-- Qualitative queries cost about 8 times more than quantitative ones ($0.0008 vs. $0.0001), because the 5 retrieved chunks add about 2,500 input tokens per call.
+- Qualitative queries cost about 8 times more than quantitative ones ($0.0008 vs. $0.0001), because the 3 retrieved chunks add about 2,500 input tokens per call.
 - Blocked write attempts are the cheapest queries, because validate_sql stops them.
 
 ## Tokenomics Optimization
