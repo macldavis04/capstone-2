@@ -1,5 +1,6 @@
 # agents/manager.py
 import os
+import json
 from google import genai
 from google.genai import types
 from dotenv import load_dotenv
@@ -33,8 +34,38 @@ Reply with one word only: qualitative, quantitative, or both.""",
         (usage.candidates_token_count or 0) + (usage.thoughts_token_count or 0))
     return route if route in ["qualitative", "quantitative", "both"] else "qualitative"
 
+HISTORY_FILE = "history.json"  # saves recent questions so follow-ups work after a restart
+try:
+    with open(HISTORY_FILE) as f:
+        history = json.load(f)
+except FileNotFoundError:
+    history = []
+
+def rewrite(query: str) -> str:
+    if not history:
+        return query
+    response = client.models.generate_content(
+        model="gemini-3.5-flash-lite",
+        contents=f"Previous questions: {history[-10:]}\n"
+                 f"Rewrite this follow-up as a standalone question. Reply with only the question.\n"
+                 f"Follow-up: {query}",
+        config=types.GenerateContentConfig(
+            max_output_tokens=512,
+            thinking_config=types.ThinkingConfig(thinking_level="low"),
+        ),
+    )
+    usage = response.usage_metadata
+    log(query, "manager-rewriter", usage.prompt_token_count,
+        (usage.candidates_token_count or 0) + (usage.thoughts_token_count or 0))
+    return (response.text or "").strip() or query
+
 def run(query: str):
     print(f"\nQuery: {query}")
+    query = rewrite(query)
+    print(f"Rewritten: {query}")
+    history.append(query)
+    with open(HISTORY_FILE, "w") as f:
+        json.dump(history[-10:], f)
     route = classify(query)
     print(f"Route: {route}")
 

@@ -4,7 +4,7 @@
 A multi-agent system that answers questions about Meridian Technologies' policies (RAG over ChromaDB) and business data (NL to SQL over SQLite), with validation and token cost logging on every response. Uses Gemini 3.5 Flash-Lite.
 
 ## Setup
-- python3.11 -m venv venv
+- python -m venv venv
 - source venv/bin/activate
 - pip install -r requirements.txt
 - echo "GEMINI_API_KEY=your-key" > .env
@@ -15,6 +15,7 @@ data/database.sqlite is included. create_db.py rebuilds it with fixed seed data 
 
 ## Architecture
 - agents/manager.py classifies each question as qualitative, quantitative, or both, and routes it.
+- agents/manager.py saves the last 10 questions to history.json and rewrites follow-ups into standalone questions before routing, so context carries across sessions.
 - agents/qualitative.py retrieves the top 5 chunks from ChromaDB and answers with source citations.
 - agents/quantitative.py generates SQL, blocks anything that isn't a SELECT, runs it, and summarizes the results.
 - validation/validator.py checks citations on qualitative answers and SQL status on quantitative ones.
@@ -35,6 +36,12 @@ data/database.sqlite is included. create_db.py rebuilds it with fixed seed data 
 - Average cost per query: about $0.0004, or about $0.39 per 1,000 queries.
 - Qualitative queries cost about 8 times more than quantitative ones ($0.0008 vs. $0.0001), because the 5 retrieved chunks add about 2,500 input tokens per call.
 - Blocked write attempts are the cheapest queries, because validate_sql stops them.
+
+## Tokenomics Optimization
+- I found that at top_k=5, qualitative answers only ever cited Sources 1 to 3 across every test run. Sources 4 and 5 added about 1,000 input tokens per call that the model never used.
+- Reduced top_k from 5 to 3 in agents/qualitative.py.
+- As a result the average qualitative input dropped by about 40%. "Explain the code review process" went from 2,716 to 1,418 tokens, and "How do we handle customer complaints?" went from 2,755 to 1,823.
+- When I checked both answers kept every key policy detail, including the 400-line PR limit, the 1 and 2 approval rules, the 30-minute complaint logging requirement, and all five handling steps. The top_k=3 complaints answer also included the $100 goodwill rule, which the top_k=5 answer had left out.
 
 ## Known Limitations
 - Validation checks that SQL ran and a source was cited, not that the answer is right (see Trust-but-Verify).

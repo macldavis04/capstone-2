@@ -2,7 +2,7 @@
 from agents.manager import run
 
 def main():
-    print("Spoonful Enterprise RAG System")
+    print("Enterprise RAG System")
     print("Type 'exit' to quit.\n")
     while True:
         query = input("Ask a question: ").strip()

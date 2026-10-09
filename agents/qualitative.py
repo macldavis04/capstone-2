@@ -10,7 +10,7 @@ load_dotenv()
 client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 model = SentenceTransformer("all-MiniLM-L6-v2")
 
-def retrieve(query: str, top_k: int = 5) -> list[dict]:
+def retrieve(query: str, top_k: int = 3) -> list[dict]: #changed from 5 to 3 to save on tokens for optimisation
     chroma = chromadb.PersistentClient(path="./data/chroma")
     collection = chroma.get_collection("enterprise-docs")
     embedding = model.encode([query]).tolist()
